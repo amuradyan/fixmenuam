@@ -1,0 +1,16 @@
+{
+  "name": "fixmenuam",
+  "version": "1.0.0",
+  "description": "Chrome extension for menu.am",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amuradyan/fixmenuam.git"
+  },
+  "author": "Darth Spectrum",
+  "license": "ISC",
+  "homepage": "https://github.com/amuradyan/fixmenuam/blob/master/README.md",
+  "dependencies": {},
+  "scripts": {
+    "build": "webpack"
+  }
+}

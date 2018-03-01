@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Fix menu.am",
+  "description": "This extension makes menu.am work as it should",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "resources/menuam.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.menu.am/"
+      ],
+      "js": [
+        "build/content.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "build/background.js"
+    ]
+  },
+  "permissions": [
+    "https://www.menu.am/",
+    "activeTab",
+    "tabs",
+    "cookies"
+  ]
+}
