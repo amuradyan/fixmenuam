@@ -8,8 +8,9 @@
   },
   "content_scripts": [
     {
+      "run_at": "document_end",
       "matches": [
-        "https://www.menu.am/"
+        "https://www.menu.am/*"
       ],
       "js": [
         "build/content.js"
@@ -21,6 +22,9 @@
       "build/background.js"
     ]
   },
+  "web_accessible_resources": [
+    "resources/script.js"
+  ],
   "permissions": [
     "https://www.menu.am/",
     "activeTab",
